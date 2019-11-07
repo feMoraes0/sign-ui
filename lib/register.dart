@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-
 import 'package:sign_screens/components/curved-left-shadow.dart';
 import 'package:sign_screens/components/curved-left.dart';
 import 'package:sign_screens/components/curved-right-shadow.dart';
 import 'package:sign_screens/components/curved-right.dart';
 
-class Login extends StatelessWidget {
+class Register extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -21,19 +20,35 @@ class Login extends StatelessWidget {
               height: size.height,
               width: size.width,
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 50.0),
+                  Container(
+                    alignment: Alignment.centerRight,
+                    padding: const EdgeInsets.only(
+                      right: 30.0,
+                      top: 160.0,
+                      bottom: 50.0
+                    ),
                     child: Text(
                       "Login",
+                      style: TextStyle(
+                        fontSize: 25.0,
+                        color: Colors.deepOrangeAccent,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 55.0),
+                    child: Text(
+                      "Register",
                       style: TextStyle(fontSize: 37.0, fontWeight: FontWeight.w700),
                     ),
                   ),
                   Stack(
                     children: <Widget>[
                       Container(
-                        height: 150.0,
+                        height: 180.0,
                         padding: EdgeInsets.only(left: 10.0),
                         margin: EdgeInsets.only(right: 40.0),
                         decoration: BoxDecoration(
@@ -87,11 +102,32 @@ class Login extends StatelessWidget {
                                 border: InputBorder.none,
                               ),
                             ),
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.grey[200],
+                                ),
+                              ),
+                            ),
+                            TextFormField(
+                              style: TextStyle(fontSize: 22.0),
+                              decoration: InputDecoration(
+                                contentPadding: const EdgeInsets.symmetric(
+                                  vertical: 15.0,
+                                ),
+                                icon: Icon(
+                                  Icons.alternate_email,
+                                  size: 26.0,
+                                ),
+                                hintText: "Email",
+                                border: InputBorder.none,
+                              ),
+                            ),
                           ],
                         ),
                       ),
                       Positioned(
-                        top: 40,
+                        top: 55,
                         right: 10,
                         child: Container(
                           padding: EdgeInsets.all(15.0),
@@ -113,48 +149,13 @@ class Login extends StatelessWidget {
                             ],
                           ),
                           child: Icon(
-                            Icons.arrow_forward,
+                            Icons.check,
                             size: 40.0,
                             color: Colors.white,
                           ),
                         ),
                       ),
                     ],
-                  ),
-                  Container(
-                    alignment: Alignment.centerRight,
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 25.0,
-                      horizontal: 30.0,
-                    ),
-                    child: Text(
-                      "Forgot?",
-                      style: TextStyle(
-                        fontSize: 22.0,
-                        color: Colors.grey[400],
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                  ),
-                  Container(
-                    alignment: Alignment.centerLeft,
-                    padding: const EdgeInsets.only(
-                      left: 25.0,
-                      top: 30.0,
-                    ),
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.pushNamed(context, "register");
-                      },
-                      child: Text(
-                        "Register",
-                        style: TextStyle(
-                          fontSize: 25.0,
-                          color: Colors.deepOrangeAccent,
-                          fontWeight: FontWeight.w700,
-                        ),
-                      ),
-                    ),
                   ),
                 ],
               ),

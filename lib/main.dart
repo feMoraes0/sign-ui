@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sign_screens/login.dart';
+import 'package:sign_screens/register.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,6 +14,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData (
         fontFamily: "Nunito"
       ),
+      routes: {
+        'register': (context) => Register(),
+      },
       home: Login(),
     );
   }

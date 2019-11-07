@@ -9,7 +9,7 @@ class CurvedRight extends StatelessWidget {
       child: ClipPath(
         clipper: RightClipper(),
         child: Container(
-          height: 300.0,
+          height: 250.0,
           width: size.width,
           decoration: BoxDecoration(
             gradient: LinearGradient(
@@ -32,27 +32,27 @@ class RightClipper extends CustomClipper<Path> {
   Path getClip(Size size) {
     Path path = Path();
 
-    path.lineTo(20, size.height);
+    path.lineTo(35, size.height);
     path.quadraticBezierTo(
-      20,
-      size.height - 30,
-      90,
-      size.height - 40,
+      40,
+      size.height - 25,
+      110,
+      size.height - 35,
     );
     path.quadraticBezierTo(
-      size.width - 80,
-      size.height - 80,
-      size.width - 40,
-      70,
+      size.width - 60,
+      size.height - 70,
+      size.width - 19,
+      35,
     );
     path.quadraticBezierTo(
-      size.width - 25,
+      size.width - 10,
       0,
       size.width,
       0,
     );
     path.lineTo(size.width, size.height);
-    path.lineTo(20, size.height);
+    path.lineTo(35, size.height);
     return path;
   }
 

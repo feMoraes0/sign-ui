@@ -9,15 +9,15 @@ class CurvedRightShadow extends StatelessWidget {
       child: ClipPath(
         clipper: RightShadowClipper(),
         child: Container(
-          height: 320.0,
+          height: 270.0,
           width: size.width,
           decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.bottomLeft,
               end: Alignment.topRight,
               colors: [
-                Color.fromRGBO(86, 201, 251, 0.4),
-                Color.fromRGBO(76, 170, 251, 0.4)
+                Color.fromRGBO(86, 201, 251, 0.3),
+                Color.fromRGBO(76, 170, 251, 0.3)
               ],
             ),
           ),
@@ -32,32 +32,32 @@ class RightShadowClipper extends CustomClipper<Path> {
   Path getClip(Size size) {
     Path path = Path();
 
-    path.lineTo(10, size.height);
+    path.lineTo(20, size.height);
     path.quadraticBezierTo(
-      5,
-      size.height - 30,
-      65,
-      size.height - 43,
+      40,
+      size.height - 35,
+      130,
+      size.height - 47,
     );
     path.quadraticBezierTo(
-      size.width - 80,
-      size.height - 80,
-      size.width - 45,
-      70,
-    );
-    path.quadraticBezierTo(
+      size.width - 60,
+      size.height - 90,
       size.width - 25,
+      40,
+    );
+    path.quadraticBezierTo(
+      size.width - 10,
       0,
       size.width,
       0,
     );
     path.lineTo(size.width, size.height);
-    path.lineTo(10, size.height);
+    path.lineTo(20, size.height);
     return path;
   }
 
   @override
   bool shouldReclip(CustomClipper<Path> oldClipper) {
-    return false;
+    return true;
   }
 }

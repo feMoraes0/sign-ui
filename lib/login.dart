@@ -35,7 +35,7 @@ class Login extends StatelessWidget {
                       Container(
                         height: 150.0,
                         padding: EdgeInsets.only(left: 10.0),
-                        margin: EdgeInsets.only(right: 50.0),
+                        margin: EdgeInsets.only(right: 40.0),
                         decoration: BoxDecoration(
                           color: Colors.white,
                           boxShadow: [
@@ -92,7 +92,7 @@ class Login extends StatelessWidget {
                       ),
                       Positioned(
                         top: 40,
-                        right: 20,
+                        right: 10,
                         child: Container(
                           padding: EdgeInsets.all(15.0),
                           decoration: BoxDecoration(
@@ -145,7 +145,7 @@ class Login extends StatelessWidget {
                     child: Text(
                       "Register",
                       style: TextStyle(
-                        fontSize: 26.0,
+                        fontSize: 25.0,
                         color: Colors.deepOrangeAccent,
                         fontWeight: FontWeight.w700,
                       ),

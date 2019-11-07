@@ -1,16 +1,37 @@
-# sign_screens
+<h1 align="center">Sign UI</h1>
 
-A new Flutter project.
+## Prints
+<p align="center">
+  <img width="300" src="https://i.pinimg.com/originals/7d/dd/de/7dddde440a44a6303f758c7ac7c3e137.png"/>
+  <img width="300" src="https://i.pinimg.com/originals/f5/c8/58/f5c858d8c47953fa5aab8678d4a05b56.png"/>
+</p>
 
-## Getting Started
+## Knowledges
+ - Bezier curves;
+ - Clipper class;
+ - Stacks;
 
-This project is a starting point for a Flutter application.
+## How to use
 
-A few resources to get you started if this is your first Flutter project:
+To clone and run this application, you'll need [Git](https://git-scm.com/downloads) and [Flutter](https://flutter.dev/docs/get-started/install) installed on your computer. From your command line:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```
+# Clone this repository
+$ git clone https://github.com/feMoraes0/sign-ui.git
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Go into the repository
+$ cd sign-ui
+
+# Install dependencies
+$ flutter packages get
+
+# Run the app
+$ flutter run
+```
+
+## Credits
+ - <a target="_blank" href="https://dribbble.com/shots/4116513-Minimal-Login-Register-Screen">Design</a>
+
+## Contact
+  - <a target="_blank" href="https://www.linkedin.com/in/fernando-moraes-48a26916a/">LinkedIn</a>
+  - <a target="_blank" href="mailto:fernandomoraes.lopes@gmail.com">E-mail</a>

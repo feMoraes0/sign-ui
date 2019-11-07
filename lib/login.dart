@@ -140,14 +140,15 @@ class Login extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     padding: const EdgeInsets.only(
                       left: 25.0,
-                      top: 30.0
+                      top: 30.0,
                     ),
                     child: Text(
                       "Register",
                       style: TextStyle(
-                          fontSize: 26.0,
-                          color: Colors.deepOrangeAccent,
-                          fontWeight: FontWeight.w700),
+                        fontSize: 26.0,
+                        color: Colors.deepOrangeAccent,
+                        fontWeight: FontWeight.w700,
+                      ),
                     ),
                   ),
                 ],

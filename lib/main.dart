@@ -10,7 +10,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Sign',
-      theme: ThemeData (),
+      theme: ThemeData (
+        fontFamily: "Nunito"
+      ),
       home: Login(),
     );
   }
